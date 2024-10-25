@@ -13,7 +13,13 @@ from sklearn.model_selection import train_test_split
 import math
 from socket import socket
 from pandas import DataFrame
+import warnings
+warnings.filterwarnings('ignore')
 
+st.set_page_config(
+    page_title="Caravana",  # Set custom page title
+    page_icon="favicon.ico"
+)
 
 DATE_TIME = "date/time"
 DATA_URL = pd.read_csv("Datasets/data.csv")
