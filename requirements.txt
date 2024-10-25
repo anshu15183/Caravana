@@ -1,0 +1,8 @@
+streamlit
+streamlit-pages
+pandas 
+numpy 
+pydeck 
+plotly.express
+matplotlib
+scikit-learn
