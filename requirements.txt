@@ -1,6 +1,6 @@
 streamlit
 streamlit-pages
-pandas 
+pandas==1.3.5
 numpy 
 pydeck 
 plotly.express

@@ -16,28 +16,28 @@ from pandas import DataFrame
 
 
 DATE_TIME = "date/time"
-DATA_URL = pd.read_csv("Datasets/SIH.csv")
+DATA_URL = pd.read_csv("Datasets/data.csv")
 # DATA_URL = pd.read_csv("Datasets/generated_vehicle_data.csv")
 
 def home():
-    st.title("CARIFY")
-    st.markdown("WELCOME TO CARIFY 💥")
-    st.write("HOME")
+    st.title("CARAVANA")
+    st.markdown("WELCOME TO CARAVANA ")
+    
 
     padding = 0
     st.markdown(f""" <style>
         .reportview-container .main .block-container{{
-            padding-top: {padding}rem;
+            padding-top: 3rem;
             padding-right: {padding}rem;
             padding-left: {padding}rem;
             padding-bottom: {padding}rem;
         }} </style> """, unsafe_allow_html=True)
 
     from PIL import Image
-    st.write(" Why to use Carify?")
-    st.text(" \n Based on 3 C's : Collect , Calculate and Compare . \n It collects data from authentic source, calculates the maintenance cost of vehicle based on certain factors and then compares it with other vehicles. \n Compares data city-wise. \n Saves the time of the user browsing information and comparing them on various platforms. \n Shows the probability of specific components being changed.")
-    st.write("How Carify benefits everone?")
-    st.text(" \n Consumers : Enable to take a decision to buy a car based on the maintenance index. This enables the customer to select the car models according to the patterns and usage in zones, states, Cities, taluka. Further drilling down with respect to aging of vehicle, usage patterns and mileage \n Car Manufacturers : With the available data, OEM will be enable to design parts for more robustness. This will reduce warranty and service cost. Companies can analyze the performance of their models with respect to their competitors in a particular region.  \n Government : Enable govt for drafting the policies and approvals for new model launch in market. \n Second-hand Car Buyers : Customer will be able to take decision to buy the most suitable cars available for sale \n ")
+    st.subheader(" Why to use Caravana?")
+    st.write(" \n Based on 3 C's : Collect , Calculate and Compare . \n It collects data from authentic source, calculates the maintenance cost of vehicle based on certain factors and then compares it with other vehicles. \n Compares data city-wise. \n Saves the time of the user browsing information and comparing them on various platforms. \n Shows the probability of specific components being changed.")
+    st.subheader("How Caravana benefits everone?")
+    st.write(" \n Consumers : Enable to take a decision to buy a car based on the maintenance index. This enables the customer to select the car models according to the patterns and usage in zones, states, Cities, taluka. Further drilling down with respect to aging of vehicle, usage patterns and mileage \n Car Manufacturers : With the available data, OEM will be enable to design parts for more robustness. This will reduce warranty and service cost. Companies can analyze the performance of their models with respect to their competitors in a particular region.  \n Government : Enable govt for drafting the policies and approvals for new model launch in market. \n Second-hand Car Buyers : Customer will be able to take decision to buy the most suitable cars available for sale \n ")
     img=Image.open('Images/toyota.jpeg')
     st.image(img, width=445)
     image = Image.open('Images/mghector.jpeg')
@@ -219,10 +219,11 @@ def visualize():
 
  # ------------------------------- ABOUT US -----------------------------------------------------------
 def about():
-    st.subheader("ABOUT CARIFY")
-    st.write("In Today’s world with so many cars, models in the market, it is hard to find out which car has a high maintenance cost/index that is authentic source. While buying a car we spend a lot of time different features and also maintenance. But there's no platform which tells us the maintenance cost that we'll have to pay after buying the car. A system that shows the health and Maintenance Index of various components of car models or car parts based on multiple factors is needed. We have created this platform for all these problems")
-    st.write("In our system we show the health and maintenance Index of various components of car models or car parts based on multiple factors. Also the probablity of replacement of a particular car component after the car is bought. We can also compare two different car models based on maintenence. This will help new buyers to understand the maintenance costs of a certain model and probability of which car part requires more often servicing /change, OEM’s to understand which part is requiring frequent change so they can improve that component and needs to be recalled and made better in the new models ")
-    st.subheader('"Know your car\'s life before you buy it!"')
+    st.subheader("ABOUT CARAVANA")
+    st.write("In today’s automotive landscape, with a plethora of cars and models available, determining which vehicle incurs higher maintenance costs can be quite challenging. While prospective buyers often invest considerable time evaluating various features of a car, the ongoing maintenance expenses are equally important yet often overlooked. Unfortunately, there is currently no dedicated platform that transparently presents the maintenance costs associated with different vehicles.")
+    st.write("To address this gap, we have developed a system that provides comprehensive insights into the health and maintenance index of various car components and models. Our platform evaluates multiple factors to deliver an accurate assessment of the maintenance requirements for different car parts, including the likelihood of needing replacements after purchase.")
+    st.write("Additionally, users can compare the maintenance costs of different car models, enabling potential buyers to make informed decisions based on expected maintenance expenses. This system not only assists consumers in understanding the long-term costs of owning a particular model but also provides valuable feedback to manufacturers regarding components that may require frequent servicing or replacement, encouraging improvements and better design in future models.")
+    st.subheader('"Get to know your car\'s longevity prior to your purchase!"')
     st.text("\n")
     st.text("\n")
     st.text(" \n BY TEAM \n Anshu Singh \n Ashish Kumar \n Uttam Kumar \n Krishna Kumawat")
