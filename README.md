@@ -1,6 +1,9 @@
-Vehicle Maintenance Index Calculator
+# Vehicle Maintenance Index Calculator
 
 
-Run using:
+### Run using:
+
+```sh
 pip install -r requirements.txt
 streamlit run vehicle_maintenance.py
+```
